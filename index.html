@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/tabs.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+</head>
+
+<body>
+
+    <!---------------------------------- Tabs ---------------------------------->
+    <h1>TABS</h1>
+    <div class="tabs-block-wrapper">
+        <div id="tabs">
+            <div class="tab-btn active" data-btn="1">1</div>
+            <div class="tab-btn" data-btn="2">2</div>
+            <div class="tab-btn" data-btn="3">3</div>
+        </div>
+        <div id="content">
+            <div class="content active" data-content="1">Content 1</div>
+            <div class="content" data-content="2">Content 2</div>
+            <div class="content" data-content="3">Content 3</div>
+        </div>
+    </div>
+
+
+    <!---------------------------------- Modal Window ---------------------------------->
+    <h2>Modal Window</h2>
+    <div class="flex-wrapper">
+        <button id="btn-open">Open</button>
+    </div>
+    <div id="wrapper-modal">
+        <div id="overlay"></div>
+        <div id="modal-window">
+            <div>
+                <button id="btn-close">Close modal</button>
+            </div>
+            <div class="content-modal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cumque necessitatibus vel suscipit
+                soluta aspernatur mollitia doloribus minima tenetur non architecto delectus obcaecati nam facilis
+                pariatur perferendis corporis possimus optio.
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------- Slider ---------------------------------->
+    <h2>My Slider</h2>
+    <div class="flex-wrapper-slider">
+        <div class="slider-wrapper">
+            <div class="slide active">
+                <img src="./img/img_1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/img_2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/img_3.jpg" alt="">
+            </div>
+            <div id="btn-prev"></div>
+            <div id="btn-next"></div>
+        </div>
+    </div>
+
+    <div class="dots-wrapper">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+
+
+    <script src="./js/tabs.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
